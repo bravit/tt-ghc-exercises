@@ -32,7 +32,7 @@ dropTrailingNewlines str | str == "" = ""
 -- implementation, along with a test.out file that contains the output
 -- from running it on the OCaml impl
 getTestDotFTest parseAndEval =
-    getTestDotFTestWithPath parseAndEval "."
+    getTestDotFTestWithPath parseAndEval "stlc"
 
 getTestDotFTestWithPath parseAndEval path
     = do input <- getFileContents (path </> "test.f")

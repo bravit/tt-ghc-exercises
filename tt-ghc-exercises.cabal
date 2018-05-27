@@ -39,3 +39,36 @@ executable stlc
                      , directory >= 1.3 && < 1.4
   default-language:    Haskell2010
   ghc-options:         -Wno-deprecations
+
+test-suite test-untyped
+  hs-source-dirs:      untyped
+  type:                exitcode-stdio-1.0
+  main-is:             Tests.hs
+  other-modules:       ArithTests Context Evaluator FullUntyped FullUntypedParser
+                       TaplError TestUtils UntypedTests Util
+  default-extensions:  FlexibleContexts
+  build-depends:       base
+                     , HUnit >=1.5 && <1.7
+                     , mtl >=2.0 && <2.3
+                     , parsec >=3.0 && <3.2
+                     , filepath >=1.3 && <1.5
+                     , directory >=1.3 && <1.4
+  default-language:    Haskell2010
+  ghc-options:         -Wno-deprecations
+
+test-suite test-stlc
+  hs-source-dirs:      stlc
+  type:                exitcode-stdio-1.0
+  main-is:             Tests.hs
+  other-modules:       ArithTests Evaluator FullSimpleTests Parser
+                       Printing SimpleContext Syntax TaplError
+                       TestUtils Typing Util
+  default-extensions:  FlexibleContexts
+  build-depends:       base
+                     , HUnit >=1.5 && <1.7
+                     , mtl >=2.0 && <2.3
+                     , parsec >=3.0 && <3.2
+                     , filepath >=1.3 && <1.5
+                     , directory >=1.3 && <1.4
+  default-language:    Haskell2010
+  ghc-options:         -Wno-deprecations
