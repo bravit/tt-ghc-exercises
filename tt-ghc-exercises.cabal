@@ -7,7 +7,6 @@ license-file:        LICENSE
 author:              Vitaly Bragilevsky
 maintainer:          bravit111@gmail.com
 build-type:          Simple
-extra-source-files:  ChangeLog.md
 cabal-version:       >=1.10
 
 extra-source-files:    LICENSE
