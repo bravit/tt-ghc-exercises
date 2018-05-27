@@ -1,0 +1,42 @@
+name:                tt-ghc-exercises
+version:             0.1.0.0
+synopsis:            Exercises for 'The type theory behind the GHC internals' leap workshop at LambdaConf 2018
+-- description:         
+license:             BSD3
+license-file:        LICENSE
+author:              Vitaly Bragilevsky
+maintainer:          bravit111@gmail.com
+build-type:          Simple
+extra-source-files:  ChangeLog.md
+cabal-version:       >=1.10
+
+extra-source-files:    LICENSE
+                       README.md
+                       stack.yaml
+
+executable untyped
+  hs-source-dirs:      untyped
+  main-is:             Main.hs
+  other-modules:       Context Evaluator FullUntyped FullUntypedParser TaplError Util
+  default-extensions:  FlexibleContexts
+  build-depends:       base >=4.10 && <4.12
+                     , mtl >=2.0 && <2.3
+                     , parsec >=3.0 && <3.2
+                     , filepath >= 1.3 && <1.5
+                     , directory >= 1.3 && < 1.4
+  default-language:    Haskell2010
+  ghc-options:         -Wno-deprecations
+
+executable stlc
+  hs-source-dirs:      stlc
+  main-is:             Main.hs
+  other-modules:       Evaluator Parser Printing SimpleContext
+                       Syntax TaplError Typing Util
+  default-extensions:  FlexibleContexts
+  build-depends:       base >=4.10 && <4.12
+                     , mtl >=2.0 && <2.3
+                     , parsec >=3.0 && <3.2
+                     , filepath >= 1.3 && <1.5
+                     , directory >= 1.3 && < 1.4
+  default-language:    Haskell2010
+  ghc-options:         -Wno-deprecations

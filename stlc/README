@@ -1,0 +1,15 @@
+The files in this directory were adopted from Ryan W. Porter code at
+https://code.google.com/archive/p/tapl-haskell/
+
+Original README content below:
+==================================
+
+Haskell port of the fullsimple OCaml implementation of TAPL.
+\nSample usage:
+
+> make test
+
+> make
+> ./f test.f
+
+See the Makefile for all targets.

@@ -1,0 +1,16 @@
+(lambda x:<a:Bool, b:Bool>. x) : <a:Bool, b:Bool> -> <a:Bool, b:Bool>
+"hello" : String
+unit : Unit
+(lambda x:A. x) : A -> A
+true : Bool
+6.28318 : Float
+{x=true, y=false} : {x:Bool, y:Bool}
+true : Bool
+{true, false} : {Bool, Bool}
+true : Bool
+(lambda x:Bool. x) : Bool -> Bool
+true : Bool
+(lambda x:Nat. (succ x)) : Nat -> Nat
+3 : Nat
+T :: *
+(lambda f:T. (lambda x:Nat. f (f x))) : T -> Nat -> Nat

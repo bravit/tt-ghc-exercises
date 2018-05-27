@@ -1,0 +1,7 @@
+The files in this directory were adopted from Ryan W. Porter code at
+https://code.google.com/archive/p/tapl-haskell/
+
+Original README content below:
+==================================
+
+This project is "generated" by copying most of the files in this directory.  The only files not copied are this one and the Makefile.  Different versions are both are created for the generated code, based on the .gen file.

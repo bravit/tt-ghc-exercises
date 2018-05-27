@@ -1,0 +1,17 @@
+true
+false
+x 
+x
+x = true
+true
+false
+(lambda x'. x')
+(lambda x'. x' x')
+{x=(lambda x'. x'), y=(lambda x'. x')}
+(lambda x'. x')
+"hello"
+120.0
+0
+1
+false
+true
