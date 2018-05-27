@@ -1,0 +1,6 @@
+:seti -ddump-simpl
+:seti -dsuppress-idinfo
+:seti -dsuppress-coercions
+:seti -dsuppress-type-applications
+:seti -dsuppress-uniques
+:seti -dsuppress-module-prefixes
