@@ -40,6 +40,25 @@ executable stlc
   default-language:    Haskell2010
   ghc-options:         -Wno-deprecations
 
+executable expr
+  hs-source-dirs:      systemfc
+  main-is:             Expr.hs
+  other-extensions:    GADTs
+  build-depends:       base >=4.10 && <4.12
+  default-language:    Haskell2010
+
+executable adt
+  hs-source-dirs:      systemfw
+  main-is:             adt.hs
+  build-depends:       base >=4.10 && <4.12
+  default-language:    Haskell2010
+
+executable double
+  hs-source-dirs:      systemfw
+  main-is:             double.hs
+  build-depends:       base >=4.10 && <4.12
+  default-language:    Haskell2010
+
 test-suite test-untyped
   hs-source-dirs:      untyped
   type:                exitcode-stdio-1.0
