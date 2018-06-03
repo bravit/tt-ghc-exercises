@@ -1,7 +1,7 @@
 /* Examples for testing */
 
   
- lambda x:<a:Bool,b:Bool>. x;
+lambda x:<a:Bool,b:Bool>. x;
  
 
 "hello";

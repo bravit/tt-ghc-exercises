@@ -3,10 +3,10 @@
 true;
 if false then true else false; 
 
-x/;
+x/; /* binding name `x` to the context */
 x;
 
-x = true;
+x = true; /* assigning value */
 x;
 if x then false else x; 
 
