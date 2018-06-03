@@ -1,3 +1,7 @@
+## The type theory behind the GHC internals
+
+[Slides](ghc-tt.pdf)
+
 This is the code for exercises at 'The type theory behind the GHC internals' leap workshop at LambdaConf 2018 (Boulder, CO).
 
 To work with the code on your system, you need either:
